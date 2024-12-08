@@ -39,7 +39,7 @@
 
     <!-- nav bar -->
     <header>
-        <nav class="flex items-center justify-between lg:item-center  bg-[#f9f7f3] lg:px-20 pt-5 pb-10 lg:w-[1357px] w-[697px] px-5">
+        <nav class="flex items-center justify-between lg:item-center  bg-[#f9f7f3] lg:px-20 pt-5 pb-10 lg:w-full w-[697px] px-5">
             <div><button id="btn-blog" class="bg-lime-400 hover:bg-lime-300  px-5 py-2 flex items-center rounded-md text-xl">Blog</button></div>
 
             <div class="flex items-center gap-3">
@@ -60,7 +60,7 @@
     </header>
 
     <!-- nav button section -->
-    <div class="flex justify-center text-center lg:text-center gap-10 mt-12 lg:w-[1357px] w-[697px]">
+    <div class="flex justify-center text-center lg:text-center gap-10 mt-12 lg:w-full w-[697px]">
         <div>
             <button id="btn-donate" class="cursor-pointer px-8 py-3 bg-lime-300 hover:bg-lime-200 rounded-md text-xl lg:text-base focus:outline-none transition-colors duration-150">Donation</button>
         </div>
@@ -68,6 +68,34 @@
             <button id="btn-history" class="cursor-pointer px-8 py-3 bg-slate-200 hover:bg-slate-400 rounded-md text-xl lg:text-base focus:outline-none transition-colors duration-150">History</button>
         </div>
     </div>
+
+    <!-- Donation section -->
+    <main id="donate-container">
+        <!-- Donation noakhali section -->
+        <section class="lg:px-20 px-15 mb-10 lg:w-full w-[697px]">
+            <div class="flex flex-col lg:flex-row mt-5 p-5 bg-slate-100 rounded-xl shadow-md">
+                <div class="mb-5">
+                    <img src="assets/noakhali.png" alt="">
+                </div>
+                <div class="flex-1 items-center ml-8">
+                    <div>
+                        <div class="flex items-center mb-6 py-2 px-4 rounded-md text-lg lg:text-base ml-40 lg:ml-0 bg-slate-200 w-40">
+                            <span><img class="w-10 lg:w-8" src="assets/coin.png" alt=""></span>
+                            <samp id="account-balance-1" class="px-3">0</samp>
+                            <span>BDT</span>
+                        </div>
+                    </div>
+                     
+                    <h2 class="text-3xl lg:text-2xl mb-6 text-center lg:text-left">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="mb-3 text-center lg:text-left text-xl lg:text-base">The recent floods in Noakhali have left a trail of devastation, severely impacting homes and infrastructure. Your generous donation can bring vital relief, providing essential supplies and support to those affected. Every contribution, no matter the size, holds the power to make a meaningful difference in their lives. Together, we can stand in solidarity with the people of Noakhali, offering hope and a chance to rebuild. Join us in this humanitarian effort and be the change they desperately need.</p>
+
+                    <input id="input-add-money-1" class="lg:pr-full pr-[355px] mb-4 pl-3 py-2 rounded-md" type="text" placeholder="Write Donation Amount"> <br>
+
+                    <button id="btn-donate-now-1" class="text-xl text-center bg-[#b4f461] lg:px-[224px] px-[185px] py-2 rounded-md">Donate Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
