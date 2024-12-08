@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation for Bangladesh</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- daisyui & tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "navbar": '#f9f7f3',
+                "btn-blog": '#b4f461', 
+              }
+            }
+          }
+        }
+    </script>
+
+<style>
+    .Lexend{
+        font-family: "Lexend", sans-serif;
+   }
+ </style>
+
 </head>
-<body>
+<body class="Lexend">
+    <header>
+        <nav class="flex items-center justify-between lg:item-center  bg-[#f9f7f3] lg:px-20 pt-5 pb-10 lg:w-[1357px] w-[697px] px-5">
+            <div><button id="btn-blog" class="bg-lime-400 hover:bg-lime-300  px-5 py-2 flex items-center rounded-md text-xl">Blog</button></div>
+
+            <div class="flex items-center gap-3">
+                <div>
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <span class="text-lg">Donation for Bangladesh</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <div>
+                    <img class="w-10" src="assets/coin.png" alt="">
+                </div>
+                <span id="cash-out" class="cursor-pointer text-lg">15000</span>
+                <span class="mt-[-2px]">BDT</span>
+            </div>
+        </nav>
+    </header>
     
 </body>
 </html>
